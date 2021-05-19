@@ -1,0 +1,46 @@
+@keyframes blink {
+    from {
+        border-right: none;
+    }
+    to {
+        border-right: 2px ridge black;
+    }
+}
+
+
+.logo {
+    font-family: Chilanka;
+    font-size: 5rem;
+    height: 15vh;
+    text-align: center;
+}
+
+.border-right {
+    border-right: 2px solid black;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+html, body {
+    margin: 0px;
+}
+/* 
+#cursor {
+    height: 100%;
+    width: 2px;
+    background-color: black;
+} */
+
+.border {
+    animation-name: blink;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
